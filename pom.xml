@@ -18,41 +18,47 @@
         <webdriver.base.url></webdriver.base.url>
     </properties>
     <dependencies>
+        <!-- Singleton pattern examples -->
         <dependency>
-            <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-core</artifactId>
-            <version>${serenity.version}</version>
-            <scope>test</scope>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.14.1</version>
         </dependency>
-        <dependency>
-            <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-junit5</artifactId>
-            <version>${serenity.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-screenplay</artifactId>
-            <version>${serenity.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-ensure</artifactId>
-            <version>${serenity.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-screenplay-webdriver</artifactId>
-            <version>${serenity.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.11</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-core</artifactId>-->
+<!--            <version>${serenity.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-junit5</artifactId>-->
+<!--            <version>${serenity.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-screenplay</artifactId>-->
+<!--            <version>${serenity.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-ensure</artifactId>-->
+<!--            <version>${serenity.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-screenplay-webdriver</artifactId>-->
+<!--            <version>${serenity.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>ch.qos.logback</groupId>-->
+<!--            <artifactId>logback-classic</artifactId>-->
+<!--            <version>1.2.11</version>-->
+<!--        </dependency>-->
         <!-- JUNIT 5 DEPENDENCY-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -63,6 +69,12 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit5.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
             <version>${junit5.version}</version>
             <scope>test</scope>
         </dependency>
